@@ -1,0 +1,20 @@
+{
+  "name": "erp-system",
+  "version": "1.0.0",
+  "description": "ERP System Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/test-api.js",
+    "init-db": "node scripts/init-firestore.js",
+    "deploy-rules": "node scripts/deploy-rules.js",
+    "emulate": "firebase emulators:start --only firestore,auth,storage",
+    "seed-data": "node scripts/init-firestore.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0"
+  }
+}
